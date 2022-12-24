@@ -1,0 +1,175 @@
+/* Importamos la fuente Open Sans desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+/* Estilo para los tooltips */
+[title]::before {
+    /* Contenido del tooltip */
+    content: attr(title);
+    /* Posición del tooltip */
+    position: absolute;
+    /* Fondo del tooltip */
+    background-color: #333;
+    /* Color del texto del tooltip */
+    color: #fff;
+    /* Bordes redondeados */
+    border-radius: 3px;
+    /* Margen del tooltip */
+    margin: 5px;
+    /* Padding del tooltip */
+    padding: 5px;
+    /* Opacidad del tooltip */
+    opacity: 0;
+    /* Transición para mostrar el tooltip */
+    transition: opacity 0.3s;
+}
+
+/* Estilo para cuando el cursor está sobre el elemento con el tooltip */
+[title]:hover::before {
+    /* Mostrar el tooltip */
+    opacity: 1;
+}
+
+/* Estilo para el contenedor principal del formulario */
+main {
+    /* Alineación al centro */
+    text-align: center;
+}
+
+/* Estilo para el formulario */
+form {
+    /* Ancho del formulario */
+    width: 80%;
+    /* Margen automático */
+    margin: 0 auto;
+    /* Fondo blanco */
+    background-color: #fff;
+    /* Sombra suave */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Bordes redondeados */
+    border-radius: 4px;
+    /* Espaciado interno */
+    padding: 20px;
+    /* Fuente Open Sans */
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Estilo para el título del formulario */
+h2 {
+    /* Tamaño de la fuente */
+    font-size: 32px;
+    /* Margen inferior */
+    margin-bottom: 20px;
+    /* Fuente Open Sans */
+    font-family: 'Open Sans', sans-serif;
+    /* Negrita */
+    font-weight: 600;
+}
+
+/* Estilo para los campos del formulario */
+label,
+input {
+    /* Tamaño de la fuente */
+    font-size: 16px;
+    /* Ancho del campo */
+    width: 100%;
+    /* Margen inferior */
+    margin-bottom: 10px;
+    /* Fuente Open Sans */
+    font-family: 'Open Sans', sans-serif;
+    /* Bordes redondeados */
+    border-radius: 4px;
+    /* Borde */
+    border: 1px solid #ddd;
+    /* Padding */
+    padding: 8px;
+}
+
+/* Estilo para los botones */
+button {
+    /* Tamaño de la fuente */
+    font-size: 16px;
+    /* Ancho del botón */
+    width: 100%;
+    /* Altura del botón */
+    height: 40px;
+    /* Fondo claro */
+    background-color: #fff;
+    /* Color del texto */
+    color: #333;
+    /* Borde */
+    border: 1px solid #ddd;
+    /* Bordes redondeados */
+    border-radius: 4px;
+    /* Fuente Open Sans */
+    font-family: 'Open Sans', sans-serif;
+    /* Transición suave al hacer hover */
+    transition: all 0.2s;
+}
+
+/* Estilo para el botón de listar */
+button:first-of-type {
+    /* Fondo azul claro */
+    background-color: #00b8d4;
+    /* Color del texto */
+    color: #fff;
+    /* Sombra suave */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para el botón de registrar */
+button:last-of-type {
+    /* Fondo naranja claro */
+    background-color: #ffb74d;
+    /* Color del texto */
+    color: #fff;
+    /* Sombra suave */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para los botones al hacer hover */
+button:hover {
+    /* Sombra más oscura */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Transición suave */
+    transform: translateY(-2px);
+}
+
+/* Estilo para la tabla */
+table {
+    /* Ancho de la tabla */
+    width: 100%;
+    /* Bordes */
+    border-collapse: collapse;
+    /* Fuente Open Sans */
+    font-family: 'Open Sans', sans-serif;
+}
+/* Estilo para las celdas de la tabla */
+th,
+td {
+    /* Tamaño de la fuente */
+    font-size: 16px;
+    /* Padding */
+    padding: 8px;
+    /* Borde */
+    border: 1px solid #ddd;
+}
+
+/* Estilo para el encabezado de la tabla */
+th {
+    /* Fondo gris claro */
+    background-color: #f0f0f0;
+    /* Color del texto */
+    color: #333;
+}
+
+/* Estilo para las filas pares de la tabla */
+tr:nth-of-type(even) {
+    /* Fondo gris claro */
+    background-color: #f9f9f9;
+}
+
+/* Estilo para las filas impares de la tabla */
+tr:nth-of-type(odd) {
+    /* Fondo blanco */
+    background-color: #fff;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <script src="codigo.js"></script>
+	<title>Formulario de registro</title>
+</head>
+<body>
+	<!-- Contenedor principal del formulario -->
+    <main>
+        <!-- Formulario de registro -->
+        <form>
+            <!-- Título del formulario -->
+            <h2>FORMULARIO</h2>
+            
+            <!-- Contenedor para los campos del formulario -->
+            <section>
+                <!-- Campo para el nombre -->
+                <label for="name" title="Ingresa tu nombre completo">Nombre:</label>
+                <input type="text" id="name" placeholder="Ingresa tu nombre">
+                
+                <!-- Campo para el apellido -->
+                <label for="lastname" title="Ingresa tu apellido completo">Apellido:</label>
+                <input type="text" id="lastname" placeholder="Ingresa tu apellido">
+                
+                <!-- Campo para la carrera -->
+                <label for="career" title="Ingresa tu carrera universitaria">Carrera:</label>
+                <input type="text" id="career" placeholder="Ingresa tu carrera">
+                
+                <!-- Campo para la edad -->
+                <label for="age" title="Ingresa tu edad en años">Edad:</label>
+                <input type="number" id="age" placeholder="Ingresa tu edad">
+                
+                <!-- Campo para el correo -->
+                <label for="mail" title="Ingresa tu correo electrónico">Correo:</label>
+                <input type="email" id="mail" placeholder="Ingresa tu correo">
+                
+                <!-- Campo para el teléfono -->
+                <label for="cell" title="Ingresa tu número de teléfono">Teléfono:</label>
+                <input type="number" id="cell" placeholder="Ingresa tu teléfono">
+            </section>
+        </form>
+        <!-- Contenedor para los botones -->
+        <div class="botones">
+            <!-- Botón para listar los registros -->
+            <button onclick="listar()" title="Muestra una lista de todos los registros">Listar</button>
+            
+            <!-- Botón para registrar nuevos datos -->
+            <button onclick="registrar()" title="Añade un nuevo registro a la lista">Registrar</button>
+        </div>
+        
+        <!-- Tabla para mostrar los registros -->
+        <table>
+            <!-- Encabezado de la tabla -->
+            <thead>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Carrera</th>
+                <th>Edad</th>
+                <th>Correo</th>
+                <th>Celular</th>
+            </thead>
+            <tbody id="Body">
+            </tbody>
+        </table>
+    </main>
+</body>
+</html>
